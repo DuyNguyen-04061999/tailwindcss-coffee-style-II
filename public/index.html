@@ -1,46 +1,90 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
 </head>
+
 <body>
-  <div id="root">
-    <div class="content-wrapper">
-        <header>
-            header
-        </header>
+    <div id="root">
+        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200">
+            <header class="py-6 mx-10">
+                <nav class="flex items-center justify-between">
+                    <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
+                        CoffeeStyle.
+                    </div>
+                    <ul class="flex basis-3/6 justify-end gap-8 uppercase text-sm text-gray-500 font-medium">
+                        <li class="npd-top-menu-item">
+                            <a href="#" class="">Home</a>
+                        </li>
+                        <li class="npd-top-menu-item">
+                            <a href="#" class="">Our Products</a>
+                        </li>
+                        <li class="npd-top-menu-item">
+                            <a href="#" class="">Blog</a>
+                        </li>
+                        <li class="npd-top-menu-item">
+                            <a href="#" class="">About</a>
+                        </li>
+                        <li class="npd-top-menu-item">
+                            <a href="#" class="">Contact</a>
+                        </li>
+                        <li class="npd-top-menu-item">
+                            <a href="#" class="">Style Guide</a>
+                        </li>
+                    </ul>
+                    <ul class="basis-1/6 flex justify-start ml-16 items-center uppercase text-gray-500 font-medium">
+                        <li class="npd-top-menu-item">
+                            <a href="#" class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="npd-icon" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" strokeWidth={2}>
+                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                        d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                                </svg>
+                                <span class="mx-2">
+                                    Cart
+                                </span>
+                                <span class="npd-badge-circle bg-orange-500 text-white">
+                                    7
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <main>
-            <div class="slider">
-                Slider
-            </div><!-- End Slider-->
-            <div class="story">
-                story
-            </div><!-- End story-->
-            <div class="feature-mugs">
-                feature-mugs
-            </div><!-- End feature-mugs-->
-            <div class="more-products">
-                more-products
-            </div><!-- End more-products-->
-            <div class="coffee-magazine">
-                coffee-magazine
-            </div><!-- End coffee-magazine-->
-            <div class="lifestyle-stories">
-                lifestyle-stories
-            </div><!-- End lifestyle-stories-->
-            <div class="subcribe-us">
-                subcribe-us
-            </div><!-- End subcribe-us-->
+            <main>
+                <div class="slider">
+                    Slider
+                </div><!-- End Slider-->
+                <div class="story">
+                    story
+                </div><!-- End story-->
+                <div class="feature-mugs">
+                    feature-mugs
+                </div><!-- End feature-mugs-->
+                <div class="more-products">
+                    more-products
+                </div><!-- End more-products-->
+                <div class="coffee-magazine">
+                    coffee-magazine
+                </div><!-- End coffee-magazine-->
+                <div class="lifestyle-stories">
+                    lifestyle-stories
+                </div><!-- End lifestyle-stories-->
+                <div class="subcribe-us">
+                    subcribe-us
+                </div><!-- End subcribe-us-->
 
-        </main>
+            </main>
 
-        <footer>
-            footer
-        </footer>
-    </div><!-- End content-wrapper-->
-</div><!-- End root-->
+            <footer>
+                footer
+            </footer>
+        </div><!-- End content-wrapper-->
+    </div><!-- End root-->
 </body>
+
 </html>
