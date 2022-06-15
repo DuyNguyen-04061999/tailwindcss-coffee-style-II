@@ -8,10 +8,10 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media only screen and (max-width:  63.9375em) {
+@media only screen and (max-width: 63.9375em) {
   .npd-top-menu-expanded {
-    @apply absolute top-full z-50 w-full left-0 bg-white flex flex-col items-center h-0 overflow-hidden transition-all duration-500;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @apply absolute top-full translate-y-[-1px] z-50 w-full left-0 bg-white flex flex-col items-center h-0 overflow-hidden transition-all duration-500;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 8px 0px;
   }
 }
 
@@ -20,7 +20,7 @@ html {
 }
 
 .npd-top-menu-item {
-  @apply hover:text-gray-800 hover:font-medium cursor-pointer lg:py-1 py-4 transition-all ease-in-out duration-300 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee after:lg:w-0 after:lg:hover:w-full after:lg:transition-all after:lg:h-0.5 after:lg:duration-300 after:lg:rounded;
+  @apply hover:text-gray-800 hover:font-medium cursor-pointer lg:py-1 py-[9px] transition-all ease-in-out duration-300 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee after:lg:w-0 after:lg:hover:w-full after:lg:transition-all after:lg:h-0.5 after:lg:duration-300 after:lg:rounded;
 }
 
 .npd-item-active {

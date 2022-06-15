@@ -12,7 +12,9 @@ module.exports = {
       spacing: {
         50: "50%",
       },
-      screens: {},
+      screens: {
+        'tablet': { 'raw': '(max-width: 1105px)' },
+      },
       keyframes: {
         slideDown: {
           "0%": { transform: "translateY(-100%)" },
@@ -21,6 +23,9 @@ module.exports = {
       },
       animation: {
         slideDown: "slideDown 1s ease-in-out",
+      },
+      backgroundImage: {
+        "slider-bg": 'url("./img/slider-bg.jpg")',
       },
     },
   },
