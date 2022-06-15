@@ -20,7 +20,7 @@ html {
 }
 
 .npd-top-menu-item {
-  @apply hover:text-gray-800 hover:font-medium cursor-pointer lg:py-1 py-[9px] transition-all ease-in-out duration-300 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee after:lg:w-0 after:lg:hover:w-full after:lg:transition-all after:lg:h-0.5 after:lg:duration-300 after:lg:rounded;
+  @apply hover:text-gray-800 hover:font-medium cursor-pointer lg:py-1 py-[9px] transition-all ease-in-out duration-300 relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:w-0 after:lg:hover:w-full after:lg:transition-all after:lg:h-0.5 after:lg:duration-300 after:lg:rounded;
 }
 
 .npd-item-active {
@@ -36,6 +36,18 @@ html {
 
 .npd-badge-circle {
   @apply text-xs text-center rounded-full px-1.5;
+}
+
+.npd-subheadline {
+  @apply flex justify-center items-center my-[100px];
+}
+
+.npd-subheadline-deco-line {
+  @apply w-8 h-px bg-[#e5e5e5];
+}
+
+.npd-subheadline-label {
+  @apply text-[#1d1f2e] text-xs uppercase mx-4 font-bold leading-[18px] text-opacity-[0.65] tracking-[2px] text-center;
 }
 
 footer {

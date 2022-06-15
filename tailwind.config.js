@@ -7,13 +7,17 @@ module.exports = {
         Karla: ["Karla", "sans-serif"],
       },
       colors: {
-        "light-coffee": "#c89f94",
+        coffee: {
+          200: "#c89f94",
+          300: "#a25f4b",
+        },
       },
       spacing: {
         50: "50%",
       },
       screens: {
-        'tablet': { 'raw': '(max-width: 1105px)' },
+        tablet: { raw: "(max-width: 1105px)" },
+        tabletChild: { raw: "(max-width: 767px)" },
       },
       keyframes: {
         slideDown: {
