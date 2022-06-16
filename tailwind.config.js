@@ -11,6 +11,7 @@ module.exports = {
           200: "#c89f94",
           300: "#a25f4b",
         },
+        "main-word":"#1d1f2e"
       },
       spacing: {
         50: "50%",
