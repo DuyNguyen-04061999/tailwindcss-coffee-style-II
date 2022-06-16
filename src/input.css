@@ -8,6 +8,14 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
 @media only screen and (max-width: 63.9375em) {
   .npd-top-menu-expanded {
     @apply absolute top-full translate-y-[-1px] z-50 w-full left-0 bg-white flex flex-col items-center h-0 overflow-hidden transition-all duration-500;
@@ -48,6 +56,32 @@ html {
 
 .npd-subheadline-label {
   @apply text-[#1d1f2e] text-xs uppercase mx-4 font-bold leading-[18px] text-opacity-[0.65] tracking-[2px] text-center;
+}
+
+/* featrure mugs */
+
+.npd-drinks-on-sale {
+  @apply capitalize absolute right-[10px] top-[10px] text-coffee-300 font-[700] py-[6px] px-4 bg-white cursor-default pointer-events-none z-[100];
+}
+
+.npd-btn-explore-mug{
+  @apply absolute bottom-[10px] left-[10px] right-[10px] bg-[#fafafa] bg-opacity-90 text-center opacity-0 transition-all duration-200 ease-linear translate-y-2 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 hover:bg-opacity-100 uppercase py-[18px] px-6 text-xs tracking-[2px] font-[700] block text-[#161724];
+}
+
+.npd-drinks-name {
+  @apply text-center text-main-word text-[20px] leading-[30px] mt-[10px] mb-[5px];
+}
+
+.npd-no-sale-off {
+  @apply text-center text-base leading-7 text-main-word opacity-75;
+}
+
+.npd-sale-off {
+  @apply text-center text-xl leading-8 text-coffee-300 mr-[10px];
+}
+
+.npd-old-price {
+  @apply leading-7 text-base text-main-word opacity-50 line-through;
 }
 
 footer {
