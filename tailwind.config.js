@@ -19,6 +19,7 @@ module.exports = {
       screens: {
         tablet: { raw: "(max-width: 1105px)" },
         tabletChild: { raw: "(max-width: 767px)" },
+        'md-1': {'max': '767px'},
       },
       keyframes: {
         slideDown: {
