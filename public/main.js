@@ -2,6 +2,8 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const topMenu = $("#npd-top-menu");
+let magazineDesc = document.querySelector("#npd-magazine-desc")
+console.log(magazineDesc);
 
 if (matchMedia) {
   const mq = window.matchMedia("(min-width: 1024px)");
@@ -15,8 +17,16 @@ function WidthChange(mq) {
     // window width is at least 1024px
     topMenu.style.height = `unset`;
     topMenu.classList.remove("npd-height-active");
+    magazineDesc.innerHTML = `The most versatile
+    furniture system ever
+    created. <br> Designed to fit your
+    life.`;
   } else {
     topMenu.style.height = `0px`;
+    magazineDesc.innerHTML = `The most versatile
+    furniture system ever
+    created. Designed to fit your
+    life.`;
   }
 }
 
