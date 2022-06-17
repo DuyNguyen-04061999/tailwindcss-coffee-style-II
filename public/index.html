@@ -17,10 +17,10 @@
 
 <body>
     <div id="root" class="overflow-hidden">
-        <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto lg:px-">
-            <header class="">
+        <div class="content-wrapper px-[30px] font-Karla max-w-screen-2xl text-base mx-auto lg:px-">
+            <header class="-mx-[30px]">
                 <nav class="flex-between py-6 relative">
-                    <div class="logo basis-3/6 lg:basis-2/6 text-center text-xl font-semibold">
+                    <div class="logo basis-3/6 lg:basis-2/6 text-center text-xl font-semibold ">
                         <a href="#" class="">CoffeeStyle.</a>
                     </div>
                     <ul id="npd-top-menu"
@@ -72,7 +72,7 @@
                 </nav>
             </header>
 
-            <main class="px-[30px]">
+            <main class="">
                 <div
                     class="slider h-[530px] bg-[url('./img/slider-bg.jpg')] bg-cover bg-no-repeat bg-bottom px-[30px] mb-[100px]">
                     <div class="w-full h-full flex-center bg-gray-900 bg-opacity-40 cursor-default">
@@ -161,7 +161,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="mb-10 md-1: mb-0">
+                            <div class="mb-10 md-1:mb-0">
                                 <a href="#" class="">
                                     <div class="npd-drinks-name">
                                         Golden Designers Mug
@@ -474,14 +474,10 @@
                     </div>
                 </div><!-- End coffee-magazine-->
 
-
-                <div class="npd-parallax-section  bg-[url('./img/parallax-1.jpg')] bg-cover bg-no-repeat bg-center h-[340px] lg:[h-400px] bg-fixed w-[100vw] relative left-[calc(-50vw_+_50%)]">
-                    
+                <!-- parallax -->
+                <div
+                    class="npd-parallax-section  bg-[url('./img/parallax-1.jpg')] bg-cover bg-no-repeat bg-center h-[340px] lg:[h-400px] bg-fixed w-[100vw] relative left-[calc(-50vw_+_50%)]">
                 </div>
-
-
-
-
                 <div class="npd-subheadline ">
                     <div class="npd-subheadline-deco-line">
                     </div>
@@ -491,11 +487,113 @@
                     <div class="npd-subheadline-deco-line">
                     </div>
                 </div>
-                <div class="lifestyle-stories">
-                    lifestyle-stories
+
+
+
+
+
+
+                <div class="lifestyle-stories w-full md:w-[95%] xl:w-[80%] mx-auto mb-24">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-14 lg:gap-4">
+                        <div class="npd-lifestyle-story-card">
+                            <div
+                                class="h-[300px] bg-[url('./img/live-story-1.jpg')] bg-cover bg-no-repeat bg-center mb-[25px]">
+                                <a href="#" alt="npd">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 ease-linear transition-all duration-400 relative group">
+                                        <div class="npd-btn-explore-mug uppercase">
+                                            read the full story
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="#" class="">
+                                    <div class="npd-drinks-name !text-left transition-all ease-linear duration-300 hover:text-coffee-300">
+                                        Health Check: why do I get a headache when I haven&apos;t had my coffee?
+                                    </div>
+                                </a>
+                                <div class="text-left mb-[15px]">
+                                    <span class="npd-no-sale-off !text-left block">
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your
+                                        mouth.
+                                    </span>
+                                    <span class="!text-xs !text-left font-bold tracking-[2px] !text-opacity-80 uppercase npd-no-sale-off block mt-5 ">
+                                        OCTOBER 9, 2018
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="npd-lifestyle-story-card">
+                            <div
+                                class="h-[300px] bg-[url('./img/live-story-2.jpg')] bg-cover bg-no-repeat bg-center mb-[25px]">
+                                <a href="#" alt="npd">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 ease-linear transition-all duration-400 relative group">
+                                        <div class="npd-btn-explore-mug uppercase">
+                                            read the full story
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="#" class="">
+                                    <div class="npd-drinks-name !text-left transition-all ease-linear duration-300 hover:text-coffee-300">
+                                        How long does a cup of coffee keep you awake?
+                                    </div>
+                                </a>
+                                <div class="text-left mb-[15px]">
+                                    <span class="npd-no-sale-off !text-left block">
+                                        It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.
+                                    </span>
+                                    <span class="!text-xs !text-left font-bold tracking-[2px] !text-opacity-80 uppercase npd-no-sale-off block mt-5 ">
+                                        OCTOBER 9, 2018
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="npd-lifestyle-story-card">
+                            <div
+                                class="h-[300px] bg-[url('./img/live-story-3.jpg')] bg-cover bg-no-repeat bg-center mb-[25px]">
+                                <a href="#" alt="npd">
+                                    <div
+                                        class="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 ease-linear transition-all duration-400 relative group">
+                                        <div class="npd-btn-explore-mug uppercase">
+                                            read the full story
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mb-10">
+                                <a href="#" class="">
+                                    <div class="npd-drinks-name !text-left transition-all ease-linear duration-300 hover:text-coffee-300">
+                                        Recent research suggests that heavy coffee drinkers may reap health benefits.
+                                    </div>
+                                </a>
+                                <div class="text-left mb-[15px]">
+                                    <span class="npd-no-sale-off !text-left block">
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </span>
+                                    <span class="!text-xs !text-left font-bold tracking-[2px] !text-opacity-80 uppercase npd-no-sale-off block mt-5 ">
+                                        OCTOBER 9, 2018
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div><!-- End lifestyle-stories-->
-                <div class="subcribe-us">
-                    subcribe-us
+
+
+
+
+
+
+
+
+
+                <div class="subcribe-us bg-gray-600 h-[500px]">
+                   
                 </div><!-- End subcribe-us-->
 
             </main>

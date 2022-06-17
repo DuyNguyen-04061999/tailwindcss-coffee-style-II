@@ -38,6 +38,7 @@ html {
 #npd-toggle-top-menu-icon * {
   pointer-events: none;
 }
+
 .npd-icon {
   @apply h-5 w-5 inline-block cursor-pointer;
 }
