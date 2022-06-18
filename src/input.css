@@ -90,6 +90,12 @@ html {
   @apply text-center uppercase py-[18px] px-6 text-xs tracking-[2px] font-[700] transition-all duration-200 ease-linear hover:bg-opacity-90;
 }
 
-footer {
-  min-height: 200px;
+/* footer */
+
+.npd-menu-footer {
+  @apply text-main-word text-xs font-bold tracking-[2px] leading-[18px] uppercase mb-5;
+}
+
+.npd-footer-item {
+  @apply text-main-word text-sm leading-[22px] mb-[10px] text-opacity-60 transition-all ease-linear duration-300 hover:text-coffee-300 hover:text-opacity-100;
 }
