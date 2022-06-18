@@ -15,7 +15,7 @@ html {
 .flex-between {
   @apply flex justify-between items-center;
 }
-
+/* 1024px */
 @media only screen and (max-width: 63.9375em) {
   .npd-top-menu-expanded {
     @apply absolute top-full translate-y-[-1px] z-50 w-full left-0 bg-white flex flex-col items-center h-0 overflow-hidden transition-all duration-500;
@@ -98,4 +98,52 @@ html {
 
 .npd-footer-item {
   @apply text-main-word text-sm leading-[22px] mb-[10px] text-opacity-60 transition-all ease-linear duration-300 hover:text-coffee-300 hover:text-opacity-100;
+}
+
+/* parallax */
+#root {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* ... */
+  perspective: 2px;
+}
+
+.npd-parallax,
+.npd-no-parallax {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.npd-parallax {
+  position: relative;
+  z-index: -1;
+  height: 40vh;
+  /* ... */
+  transform-style: preserve-3d;
+}
+
+.npd-no-parallax {
+  height: auto;
+  z-index: 999;
+  background: #fff;
+}
+
+.npd-parallax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* ... */
+  transform: translateZ(-1px) scale(1.5);
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 80em) {
+  .npd-parallax {
+    height: 80vh;
+  }
 }
