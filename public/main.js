@@ -2,13 +2,19 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 const topMenu = $("#npd-top-menu");
-let magazineDesc = document.querySelector("#npd-magazine-desc")
-console.log(magazineDesc);
+let magazineDesc = document.querySelector("#npd-magazine-desc");
+const footerDesc = $("#npd-footer-desc");
 
 if (matchMedia) {
   const mq = window.matchMedia("(min-width: 1024px)");
   mq.addListener(WidthChange);
   WidthChange(mq);
+}
+
+if (matchMedia) {
+  const mq_2 = window.matchMedia("(min-width: 991px)");
+  mq_2.addListener(WidthChange);
+  WidthChange_2(mq_2);
 }
 
 // media query change
@@ -27,6 +33,16 @@ function WidthChange(mq) {
     furniture system ever
     created. Designed to fit your
     life.`;
+  }
+}
+
+function WidthChange_2(mq_2) {
+  if (mq_2.matches) {
+    footerDesc.innerHTML = `Delivering the best
+    coffee life since 1996. <br> From coffee geeks to the real ones.`;
+  } else {
+    footerDesc.innerHTML = `Delivering the best
+    coffee life since 1996. From coffee geeks to the real ones.`;
   }
 }
 
